@@ -1,3 +1,5 @@
+package 字节流;
+
 import java.io.*;
 
 public class TestNodeStreams{
