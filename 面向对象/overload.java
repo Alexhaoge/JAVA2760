@@ -26,7 +26,7 @@ class Manager extends Employee {
     }
 }
 
-public class test {
+public class overload {
     public void findTaxRate(final Employee e) {
         if (e instanceof Manager) {
             System.out.println("M");
