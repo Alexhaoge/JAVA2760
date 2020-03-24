@@ -1,2 +1,3 @@
 # JAVA2760
- JAVA course(2760) in SMS, Nankai Univ. Given by Pf. Xiang in 2020 Spring.
+ JAVA course(2760) given by Pf. Xiang in 2020 Spring, School of Mathematical Sciences, Nankai University.  
+Currently I don't intend to upload slides or textbook without the permisson of Pf. Only my codes and own thinking are included. 
