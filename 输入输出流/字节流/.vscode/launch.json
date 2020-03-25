@@ -9,8 +9,7 @@
             "name": "CodeLens (Launch) - TestNodeStreams",
             "request": "launch",
             "mainClass": "TestNodeStreams",
-            "projectName": "字节流",
+            "projectName": "字节流_5aab16a2",
             "args": "a.in a.out"
         }
-    ]
 }
