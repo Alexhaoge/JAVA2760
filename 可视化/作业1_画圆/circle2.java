@@ -1,4 +1,5 @@
-//用java.awt重载component的paint方法，使用Graphics2D
+//写一个继承component的子类，
+//重载paint方法，使用Graphics2D
 //使用Graphics2D好处
 //1. 可以使用中心构造方法
 //2. setRenderingHint抗锯齿

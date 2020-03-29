@@ -1,4 +1,5 @@
-//用java.awt重载component的paint方法，使用Graphics中的drawoval
+//写一个继承component的子类，
+//重载paint方法，使用Graphics中的drawoval
 import java.awt.*;
 import java.awt.geom.*;
 import java.awt.event.WindowEvent;
