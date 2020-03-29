@@ -8,10 +8,8 @@ public class SampleTextField{
     private Frame f;
     private TextField tf;
     private TextArea ta;
-    public String text;
     private MenuBar mb;
     public SampleTextField(int depth, int width){
-        text = new String();
         f = new Frame("TextField");
         tf = new TextField("", width);
         ta = new TextArea("", depth, width,0);
@@ -52,26 +50,18 @@ public class SampleTextField{
         f.setVisible(true);
     }
     public void appendTextArea() {
-        tf.getText();
+        String s = tf.getText();
         tf.setText("");
         //清空textfield前需要，这是源码实现的规则导致的
         //https://bbs.csdn.net/topics/392050789
-        ta.append(text);
+        ta.append(s+'\n');
     }
     class NameHandler extends KeyAdapter {
         public void keyPressed(KeyEvent e){
             if( e.getKeyCode() == KeyEvent.VK_ENTER){
                 //System.out.println(text);
                 SampleTextField.this.appendTextArea();
-                text = "";
             }
-        }
-        public void keyTyped(KeyEvent e){
-            char c = e.getKeyChar();
-            if(c == '\n')
-                e.consume();
-            //System.out.println(c);
-            text = text + c;
         }
     }
     class MyWin extends WindowAdapter{
