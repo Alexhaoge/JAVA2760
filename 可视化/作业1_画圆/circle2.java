@@ -44,6 +44,7 @@ public class circle2{
             int centery = height/2;
             circle.setFrameFromCenter(centerx,centery,centerx+r,centery+r);
             g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+            g2.setRenderingHint(RenderingHints.KEY_STROKE_CONTROL, RenderingHints.VALUE_STROKE_NORMALIZE);
             g2.setStroke(new BasicStroke(2.5f));
             g2.draw(circle);
         }
