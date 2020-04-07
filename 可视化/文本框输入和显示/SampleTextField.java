@@ -13,7 +13,7 @@ public class SampleTextField{
         f = new Frame("TextField");
         tf = new TextField("", width);
         ta = new TextArea("", depth, width,0);
-        //ta.setEditable(false);
+        ta.setEditable(false);
         mb = new MenuBar();
         Menu m1 = new Menu("Mode");
         Menu m2 = new Menu("Clear");
