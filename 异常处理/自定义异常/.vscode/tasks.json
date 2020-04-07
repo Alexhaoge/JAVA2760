@@ -6,7 +6,7 @@
         {
             "label": "self-defined exception",
             "type": "shell",
-            "command": "javac -encoding UTF-8 SeverTimedOutException.java"
+            "command": "javac -encoding UTF-8 ServerTimedOutException.java"
         },
         {
             "label": "test",
