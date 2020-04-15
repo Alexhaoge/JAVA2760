@@ -3,7 +3,7 @@ public class ThreadPriority {
         System.out.println("once Main Thread Priority = " + Thread.currentThread().getPriority());
         MyThread1 myThread1 = new MyThread1();
         myThread1.setPriority(6);
-        Thread.currentThread().setPriority(8);
+        Thread.currentThread().setPriority(3);
         System.out.println("twice Main Thread Priority = " + Thread.currentThread().getPriority());
         myThread1.start();
     }
