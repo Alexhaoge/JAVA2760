@@ -1,10 +1,10 @@
 ## ThreadDemo.java分析
 ## Java线程实现
-Thread类很多方法时Native的，因此与系统有关。  
+Thread类很多方法是Native的，因此与系统有关。  
 ```java
     public static native void yield(); 
 ```   
-实现线程有三种方法：内核线程(轻量级进程LWP)/用户线程/用户线程+LWP。  
+实现线程有三种方法：内核线程(轻量级进程LWP)/用户线程/用户线程+LWP，windowsNT和linux主要都是LWP。  
 不同jdk标准不一样，Sun jdk中windows和linux版都是一条Java线程映射到一条LWP.
 ## 线程调度策略
 Java线程的唤醒、优先级设置是由JVM实现的，但线程的调度（与LWP的连接）则是由本地线程库完成。  
